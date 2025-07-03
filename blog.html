@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Morphixia - Insights, tips, dan artikel terbaru tentang transformasi digital, UI/UX design, BPMN, dan teknologi terkini.">
+    <meta name="keywords" content="blog, digital transformation, UI UX design, BPMN, ICONIX, technology insights, business process">
+    <meta name="author" content="Morphixia">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Blog Morphixia - Digital Transformation Insights">
+    <meta property="og:description" content="Insights, tips, dan artikel terbaru tentang transformasi digital, UI/UX design, BPMN, dan teknologi terkini.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://morphixia.com/blog">
+    <meta property="og:image" content="https://morphixia.com/images/blog-hero.jpg">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
+    
+    <!-- Structured Data for Blog -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Blog Morphixia",
+        "description": "Insights dan artikel tentang transformasi digital dan teknologi",
+        "url": "https://morphixia.com/blog",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Morphixia",
+            "logo": "https://morphixia.com/images/logo.png"
+        },
+        "blogPost": [
+            {
+                "@type": "BlogPosting",
+                "headline": "Panduan Lengkap BPMN untuk Optimasi Proses Bisnis",
+                "description": "Pelajari cara menggunakan BPMN untuk menganalisis dan mengoptimalkan proses bisnis Anda.",
+                "datePublished": "2025-07-01",
+                "author": {
+                    "@type": "Person",
+                    "name": "Tim Morphixia"
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <title>Blog Morphixia - Digital Transformation Insights</title>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="/" class="logo" aria-label="Morphixia Home">
+                        <span class="logo-text">Morphixia</span>
+                    </a>
+                    <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+                <ul class="navbar-menu" role="menubar">
+                    <li role="none"><a href="/" role="menuitem" class="nav-link">Beranda</a></li>
+                    <li role="none"><a href="/#services" role="menuitem" class="nav-link">Layanan</a></li>
+                    <li role="none"><a href="/#about" role="menuitem" class="nav-link">Tentang</a></li>
+                    <li role="none"><a href="/#portfolio" role="menuitem" class="nav-link">Portfolio</a></li>
+                    <li role="none"><a href="/blog" role="menuitem" class="nav-link active">Blog</a></li>
+                    <li role="none"><a href="/#contact" role="menuitem" class="nav-link">Kontak</a></li>
+                    <li role="none"><a href="/#contact" role="menuitem" class="btn btn-primary">Konsultasi Gratis</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Blog Hero Section -->
+        <section class="blog-hero" aria-labelledby="blog-hero-title">
+            <div class="container">
+                <div class="blog-hero-content">
+                    <h1 id="blog-hero-title" class="blog-hero-title">
+                        Insights & <span class="highlight">Knowledge</span>
+                    </h1>
+                    <p class="blog-hero-subtitle">
+                        Temukan artikel, tips, dan insights terbaru tentang transformasi digital, UI/UX design, BPMN, dan teknologi yang dapat membantu mengembangkan bisnis Anda.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Search and Filter -->
+        <section class="blog-controls" aria-labelledby="blog-controls-title">
+            <div class="container">
+                <div class="blog-controls-content">
+                    <div class="blog-search">
+                        <label for="blog-search-input" class="sr-only">Cari artikel</label>
+                        <input 
+                            type="search" 
+                            id="blog-search-input" 
+                            class="search-input" 
+                            placeholder="Cari artikel..."
+                            aria-describedby="search-help"
+                        >
+                        <button type="button" class="search-btn" aria-label="Cari artikel">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                            </svg>
+                        </button>
+                        <div id="search-help" class="sr-only">Masukkan kata kunci untuk mencari artikel</div>
+                    </div>
+                    
+                    <div class="blog-categories">
+                        <h2 id="blog-controls-title" class="sr-only">Filter kategori</h2>
+                        <button class="category-btn active" data-category="all">Semua</button>
+                        <button class="category-btn" data-category="digital-transformation">Digital Transformation</button>
+                        <button class="category-btn" data-category="ui-ux">UI/UX Design</button>
+                        <button class="category-btn" data-category="bpmn">BPMN</button>
+                        <button class="category-btn" data-category="iconix">ICONIX</button>
+                        <button class="category-btn" data-category="technology">Technology</button>
+                        <button class="category-btn" data-category="business">Business</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Article -->
+        <section class="featured-article" aria-labelledby="featured-title">
+            <div class="container">
+                <h2 id="featured-title" class="section-title">Artikel Unggulan</h2>
+                <article class="featured-post" data-category="bpmn">
+                    <div class="featured-post-image">
+                        <img src="images/business-transformation.png" alt="BPMN Business Process Modeling" loading="lazy">
+                        <div class="featured-post-category">BPMN</div>
+                    </div>
+                    <div class="featured-post-content">
+                        <h3 class="featured-post-title">
+                            <a href="blog/panduan-lengkap-bpmn-optimasi-proses-bisnis.html">
+                                Panduan Lengkap BPMN untuk Optimasi Proses Bisnis
+                            </a>
+                        </h3>
+                        <p class="featured-post-excerpt">
+                            Business Process Model and Notation (BPMN) adalah standar internasional untuk pemodelan proses bisnis yang dapat membantu organisasi mengidentifikasi bottleneck, meningkatkan efisiensi, dan mengoptimalkan operasional. Pelajari cara mengimplementasikan BPMN dalam bisnis Anda.
+                        </p>
+                        <div class="featured-post-meta">
+                            <time datetime="2025-07-01" class="post-date">1 Juli 2025</time>
+                            <span class="post-read-time">8 menit baca</span>
+                            <span class="post-author">Tim Morphixia</span>
+                        </div>
+                        <a href="blog/panduan-lengkap-bpmn-optimasi-proses-bisnis.html" class="featured-post-link">
+                            Baca Selengkapnya
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Blog Posts Grid -->
+        <section class="blog-posts" aria-labelledby="blog-posts-title">
+            <div class="container">
+                <h2 id="blog-posts-title" class="section-title">Artikel Terbaru</h2>
+                <div class="blog-grid" id="blog-grid">
+                    
+                    <!-- Blog Post 1 -->
+                    <article class="blog-post" data-category="ui-ux">
+                        <div class="blog-post-image">
+                            <img src="images/ui-ux-design.jpg" alt="UI/UX Design Trends 2025" loading="lazy">
+                            <div class="blog-post-category">UI/UX</div>
+                        </div>
+                        <div class="blog-post-content">
+                            <h3 class="blog-post-title">
+                                <a href="blog/tren-ui-ux-design-2025.html">
+                                    Tren UI/UX Design 2025: Apa yang Perlu Diketahui Designer
+                                </a>
+                            </h3>
+                            <p class="blog-post-excerpt">
+                                Eksplorasi tren terbaru dalam UI/UX design untuk tahun 2025, termasuk AI-driven design, micro-interactions, dan sustainable design practices.
+                            </p>
+                            <div class="blog-post-meta">
+                                <time datetime="2025-06-28" class="post-date">28 Juni 2025</time>
+                                <span class="post-read-time">6 menit baca</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 2 -->
+                    <article class="blog-post" data-category="digital-transformation">
+                        <div class="blog-post-image">
+                            <img src="images/technology-innovation.jpg" alt="Digital Transformation Strategy" loading="lazy">
+                            <div class="blog-post-category">Digital Transformation</div>
+                        </div>
+                        <div class="blog-post-content">
+                            <h3 class="blog-post-title">
+                                <a href="blog/strategi-transformasi-digital-umkm.html">
+                                    Strategi Transformasi Digital untuk UMKM: Langkah Praktis
+                                </a>
+                            </h3>
+                            <p class="blog-post-excerpt">
+                                Panduan praktis untuk UMKM yang ingin memulai transformasi digital, mulai dari assessment hingga implementasi teknologi yang tepat.
+                            </p>
+                            <div class="blog-post-meta">
+                                <time datetime="2025-06-25" class="post-date">25 Juni 2025</time>
+                                <span class="post-read-time">10 menit baca</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 3 -->
+                    <article class="blog-post" data-category="iconix">
+                        <div class="blog-post-image">
+                            <img src="images/hero-digital-solutions.jpg" alt="ICONIX Methodology" loading="lazy">
+                            <div class="blog-post-category">ICONIX</div>
+                        </div>
+                        <div class="blog-post-content">
+                            <h3 class="blog-post-title">
+                                <a href="blog/metodologi-iconix-perancangan-sistem.html">
+                                    Metodologi ICONIX: Pendekatan Efektif untuk Perancangan Sistem
+                                </a>
+                            </h3>
+                            <p class="blog-post-excerpt">
+                                Memahami metodologi ICONIX sebagai bridge antara use case dan design, serta implementasinya dalam pengembangan sistem informasi.
+                            </p>
+                            <div class="blog-post-meta">
+                                <time datetime="2025-06-22" class="post-date">22 Juni 2025</time>
+                                <span class="post-read-time">12 menit baca</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 4 -->
+                    <article class="blog-post" data-category="technology">
+                        <div class="blog-post-image">
+                            <img src="images/business-transformation.png" alt="Web Performance Optimization" loading="lazy">
+                            <div class="blog-post-category">Technology</div>
+                        </div>
+                        <div class="blog-post-content">
+                            <h3 class="blog-post-title">
+                                <a href="blog/optimasi-performa-website-2025.html">
+                                    Optimasi Performa Website: Teknik Terbaru untuk Loading Speed
+                                </a>
+                            </h3>
+                            <p class="blog-post-excerpt">
+                                Teknik-teknik terbaru untuk mengoptimalkan performa website, termasuk Core Web Vitals, lazy loading, dan modern image formats.
+                            </p>
+                            <div class="blog-post-meta">
+                                <time datetime="2025-06-20" class="post-date">20 Juni 2025</time>
+                                <span class="post-read-time">8 menit baca</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 5 -->
+                    <article class="blog-post" data-category="business">
+                        <div class="blog-post-image">
+                            <img src="images/ui-ux-design.jpg" alt="ROI Digital Investment" loading="lazy">
+                            <div class="blog-post-category">Business</div>
+                        </div>
+                        <div class="blog-post-content">
+                            <h3 class="blog-post-title">
+                                <a href="blog/mengukur-roi-investasi-digital.html">
+                                    Mengukur ROI Investasi Digital: Metrik yang Harus Diperhatikan
+                                </a>
+                            </h3>
+                            <p class="blog-post-excerpt">
+                                Panduan lengkap untuk mengukur return on investment (ROI) dari investasi digital, termasuk KPI dan tools yang dapat digunakan.
+                            </p>
+                            <div class="blog-post-meta">
+                                <time datetime="2025-06-18" class="post-date">18 Juni 2025</time>
+                                <span class="post-read-time">7 menit baca</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 6 -->
+                    <article class="blog-post" data-category="ui-ux">
+                        <div class="blog-post-image">
+                            <img src="images/technology-innovation.jpg" alt="User Research Methods" loading="lazy">
+                            <div class="blog-post-category">UI/UX</div>
+                        </div>
+                        <div class="blog-post-content">
+                            <h3 class="blog-post-title">
+                                <a href="blog/metode-user-research-efektif.html">
+                                    Metode User Research yang Efektif untuk Produk Digital
+                                </a>
+                            </h3>
+                            <p class="blog-post-excerpt">
+                                Eksplorasi berbagai metode user research, dari user interviews hingga usability testing, untuk menciptakan produk yang user-centric.
+                            </p>
+                            <div class="blog-post-meta">
+                                <time datetime="2025-06-15" class="post-date">15 Juni 2025</time>
+                                <span class="post-read-time">9 menit baca</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Load More Button -->
+                <div class="blog-load-more">
+                    <button class="btn btn-secondary" id="load-more-btn">
+                        Muat Lebih Banyak
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12l7 7 7-7"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- No Results Message -->
+                <div class="no-results" id="no-results" style="display: none;">
+                    <div class="no-results-content">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="m21 21-4.35-4.35"/>
+                        </svg>
+                        <h3>Tidak ada artikel ditemukan</h3>
+                        <p>Coba gunakan kata kunci yang berbeda atau pilih kategori lain.</p>
+                        <button class="btn btn-primary" onclick="clearSearch()">Reset Pencarian</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Subscription -->
+        <section class="blog-newsletter" aria-labelledby="newsletter-title">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h2 id="newsletter-title">Dapatkan Insights Terbaru</h2>
+                        <p>Berlangganan newsletter kami untuk mendapatkan artikel, tips, dan insights terbaru tentang transformasi digital langsung di inbox Anda.</p>
+                    </div>
+                    <form class="newsletter-form" id="blogNewsletterForm">
+                        <div class="newsletter-input-group">
+                            <label for="newsletter-email" class="sr-only">Email untuk newsletter</label>
+                            <input 
+                                type="email" 
+                                id="newsletter-email" 
+                                name="email" 
+                                placeholder="Masukkan email Anda" 
+                                required
+                                aria-describedby="newsletter-help"
+                            >
+                            <button type="submit" class="newsletter-submit">
+                                Subscribe
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="newsletter-help" class="newsletter-help">
+                            Kami menghormati privasi Anda. Unsubscribe kapan saja.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Morphixia</h3>
+                    <p class="footer-description">
+                        Solusi digital terintegrasi untuk transformasi bisnis yang berkelanjutan dan berdampak.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/company/morphixia" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/morphixia" class="social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Layanan</h4>
+                    <ul class="footer-links">
+                        <li><a href="services/website-development.html">Pengembangan Website</a></li>
+                        <li><a href="services/ui-ux-design.html">Desain UI/UX</a></li>
+                        <li><a href="services/bpmn-analysis.html">Analisis BPMN</a></li>
+                        <li><a href="services/iconix-design.html">Perancangan ICONIX</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Perusahaan</h4>
+                    <ul class="footer-links">
+                        <li><a href="/#about">Tentang Kami</a></li>
+                        <li><a href="/#portfolio">Portfolio</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Kategori Blog</h4>
+                    <ul class="footer-links">
+                        <li><a href="blog?category=digital-transformation">Digital Transformation</a></li>
+                        <li><a href="blog?category=ui-ux">UI/UX Design</a></li>
+                        <li><a href="blog?category=bpmn">BPMN</a></li>
+                        <li><a href="blog?category=technology">Technology</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Morphixia. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>
+
